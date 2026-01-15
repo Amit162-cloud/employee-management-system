@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emp-app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        padding: 40px 20px;
+      }
+
+      h1 {
+        color: white;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        letter-spacing: 0.5px;
+      }
+
+      hr {
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        height: 2px;
+        margin: 20px 0 30px 0;
+      }
+
+      .btn-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: flex-start;
+      }
+
+      .btn-container .btn {
+        flex: 0 1 auto;
+        white-space: nowrap;
+        padding: 12px 24px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        font-size: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-primary {
+        background: white;
+        color: #667eea;
+        border: 2px solid white;
+      }
+
+      .btn-primary:hover {
+        background: white;
+        color: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        border: 2px solid white;
+      }
+
+      .btn-primary:active {
+        transform: translateY(0);
+      }
+
+      @media (max-width: 576px) {
+        .btn-container {
+          flex-direction: column;
+        }
+        .btn-container .btn {
+          width: 100%;
+          text-align: center;
+        }
+        h1 {
+          font-size: 28px;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Office Employee Management System</h1>
+      <hr />
+      <div class="btn-container">
+        <a class="btn btn-primary" href="all_emp" role="button"
+          >View all Employee</a
+        >
+        <a class="btn btn-primary" href="add_emp" role="button"
+          >Add An Employee</a
+        >
+        <a class="btn btn-primary" href="remove_emp" role="button"
+          >Remove An Employee</a
+        >
+        <a class="btn btn-primary" href="filter_emp" role="button"
+          >Filter An Employee</a
+        >
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
