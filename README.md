@@ -24,5 +24,3 @@ The application provides features to **add, view, filter, and remove employees**
 - Version Control: Git & GitHub
 
 
-## 📁 Project Structure
-
